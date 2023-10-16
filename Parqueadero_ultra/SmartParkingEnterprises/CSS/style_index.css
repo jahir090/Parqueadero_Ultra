@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    margin:0;
+    margin: 0;
     background-image: url(../img/inicio1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,8 +19,8 @@ body{
 .header{
     background-image: url(../img/background.jpg);
     background-position: 70% 15%;
-    background-size:cover;
-    height:100vh;
+    background-size: cover;
+    height: 100vh;
     min-height: 60rem;
     overflow: hidden;
     height: auto;
@@ -32,19 +32,19 @@ body{
     padding-top: 3rem;
     align-items: center;
 }
+
 .navegacion a{
-    color: #ffff00;/*fc2d03*/
+    color: #ffff00;
     text-decoration: none;
-    font-size: 2.4rem;/*2.8*/
+    font-size: 2.4rem;
     font-weight: 600;
     margin-right: 4rem;
     position: relative;
-    right:-67rem;/*-90*/
-    
+    right: -67rem;
 }
 
 .navegacion a:hover{
-    color:#25f145;
+    color: #25f145;
 }
 
 .navegacion .btnLogin-popup{
@@ -56,7 +56,7 @@ body{
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.0em;
-    color:#ffff00;
+    color: #ffff00;
     font-weight: 600;
     margin-left: 10px;
     transition: .5s;
@@ -72,18 +72,17 @@ body{
 }
 
 .title_main{
-    color:#E0FFFF ;/*#c0f3f9*/ /*color inicial #2dd28e #e9fefe*/
-    font-size: 6.5rem;/*5.5*/
+    color: #E0FFFF;
+    font-size: 6.5rem;
     position: relative;
-    bottom:-40rem;/*-74*/
-    right:-50rem;/*-35*//*-27*/
+    bottom: -40rem;
+    right: -50rem;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-
-@media screen and (max-width:768px) { /*Celular pequeño*/
-    .header .title_main{ 
-        color:#25f145;
+@media screen and (max-width: 768px) { /*Celular pequeño*/
+    .title_main {
+        color: #25f145;
         position: relative;
         bottom: -10rem;
         right: -10rem;
@@ -100,7 +99,7 @@ h2{
 
 .title2{
     font-size: 4.8rem;
-    color: rgb(0, 255, 72); /*darkorchid anterior*/
+    color: rgb(0, 255, 72);
     height: auto;
 }
 
@@ -113,6 +112,7 @@ h2{
     vertical-align: text-top;
     color: aliceblue;
 }
+
 .table1 th{
     color: aliceblue;
     font-size: 28px;
@@ -120,11 +120,11 @@ h2{
 }
 
 .table1{
-    margin:10px;
+    margin: 10px;
 }
 
 .table1 td{
-    width:400px;
+    width: 400px;
     padding: 10px;
 }
 
@@ -148,14 +148,15 @@ h2{
 
 b{
     color: cornflowerblue;
-    font-size:22px;
-    position:relative;
+    font-size: 22px;
+    position: relative;
     bottom: 10px;
 }
 
 p{
     font-size: 18px;
 }
+
 /************************* ANIMACION TARJETAS *************************/
 .contenedor {
     display: flex;
@@ -164,10 +165,9 @@ p{
 }
 
 .top_carro, .top_moto, .top_cicla {
-    /* Estilos comunes para todas las clases */
     margin: auto;
     cursor: pointer;
-    width: 30%; /* Cambia el ancho a 30% */
+    width: 30%;
     height: auto;
     display: grid;
     justify-content: center;
@@ -189,12 +189,12 @@ p{
     height: auto;
 }
 
-.top_carro:hover{
+.top_carro:hover, .top_moto:hover, .top_cicla:hover {
     cursor: pointer;
-    transform: translateY(-3%); 
+    transform: translateY(-3%);
 }
 
-.carro-button {
+.carro-button, .moto-button, .cicla-button {
     border: none;
     background: none;
     padding: 0;
@@ -242,7 +242,7 @@ p{
 #animacion1{
     animation-name: slidein1;
     animation-duration: 1.2s;
-    animation-play-state: paused; /* pausa mientras no se ve en la pantalla*/
+    animation-play-state: paused;
 }
 
 #animacion2{
@@ -260,36 +260,36 @@ p{
 @keyframes slidein1{
     from{
         margin-left: 300%;
-        width:100%;
+        width: 100%;
     }
 
     to{
         margin-left: 0%;
-        width:100%;
+        width: 100%;
     }
 }
 
 @keyframes slidein2{
     from{
         margin-left: 300%;
-        width:100%;
+        width: 100%;
     }
 
     to{
         margin-left: 0%;
-        width:100%;
+        width: 100%;
     }
 }
 
 @keyframes slidein3{
     from{
         margin-left: 300%;
-        width:100%;
+        width: 100%;
     }
 
     to{
         margin-left: 0%;
-        width:100%;
+        width: 100%;
     }
 }
 
@@ -302,11 +302,11 @@ p{
 }
 
 .container{
-    width: 1000px;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
   
 .container .card{
@@ -314,9 +314,9 @@ p{
 }
   
 .container .card .face{
-    width:300px;
+    width: 300px;
     height: 200px;
-    transition:.4s;   
+    transition: .4s;   
 }
   
 .container .card .face.face1{
@@ -324,28 +324,15 @@ p{
     background: #333;
     display: flex;
     justify-content: center;
-    align-content:center;
+    align-content: center;
     align-items: center;
-    z-index: 1  ;
+    z-index: 1;
     transform: translateY(100px);
 }
   
-/*.container .card:hover .face.face1 {
-    transform: translateY(0);
-    box-shadow:
-        inset 0 0 60px whitesmoke,
-        inset 20px 0 80px #f0f,
-        inset -20px 0 80px #0ff,
-        inset 20px 0 300px #f0f,
-        inset -20px 0 300px #0ff,
-        0 0 50px #fff,
-        -10px 0 80px #f0f,
-        10px 0 80px #0ff;
-}*/
-  
 .container .card .face.face1 .content{
     opacity: .2;
-    transition:  0.5s;
+    transition: 0.5s;
     text-align: center;
 }
   
@@ -373,7 +360,7 @@ p{
     position: relative;
     background: whitesmoke;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     text-align: justify;
     padding: 20px;
@@ -388,23 +375,23 @@ p{
   
 .container .card .face.face2 .content p, a{
     font-size: 10pt;
-    margin: 0 ;
+    margin: 0;
     padding: 0;
-    color:#333;
+    color: #333;
 }
   
 .container .card .face.face2 .content a{
-    text-decoration:none;
+    text-decoration: none;
     color: black;
     box-sizing: border-box;
-    outline : 1px dashed #333;
+    outline: 1px dashed #333;
     padding: 10px;
     margin: 15px 0 0;
     display: inline-block;
 }
   
 .container .card .face.face2 .content a:hover{
-    background: #333 ;
+    background: #333;
     color: whitesmoke; 
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
@@ -421,24 +408,24 @@ footer{
     justify-content:  center; 
 }
 .footer a{
-   color:black;
-   text-decoration:none;
-   font-size:20px;
-   margin: 10px;
-   font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
 }
 
 .footer a:hover{
-    color:#25f145;
-    text-decoration:none;
+    color: #25f145;
+    text-decoration: none;
 }
 
 .footer p{
-   color:black;
-   text-decoration:none;
-   font-size:20px;
-   margin: 10px; 
-   font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px; 
+    font-weight: bold;
 }
 
 .copyright{
@@ -448,11 +435,4 @@ footer{
 #final{
     margin: 0;
     font-size: 20;
-    
 }
-/*********************************************************************/
-/************************* RESPONSIVE DESIGN *************************/
-/*********************************************************************/
-
-  
-/************************* CARACTERISTICAS GLOBALES *************************/
