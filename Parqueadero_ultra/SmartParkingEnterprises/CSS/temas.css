@@ -18,7 +18,7 @@ table {
 tr:hover {background-color: lightcyan;}
 
 .table tr:first-child {
-  background-color: rgb(137, 192, 192); /* Colorear primera fila */
+  background-color: rgb(211, 34, 108); /* Colorear primera fila */
 }
 
 .table tr:not(:first-child) {
@@ -209,7 +209,7 @@ label {
 .label_azul {
   display: inline-block;
   font: normal 18px / normal "Coda", Helvetica, sans-serif;
-  color: #33afff;
+ 
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.66);
@@ -299,7 +299,7 @@ span
 
 /* When the checkbox is checked, add a blue background */
 .container_checkbox input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: #f3aa21;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -407,5 +407,5 @@ ul.typeahead.dropdown-menu li:last-child a {
 }
 
 .custom-card {
-  background-color: lightcyan; /* Aplica el color de fondo a la card */
+  background-color: rgb(255, 232, 224); /* Aplica el color de fondo a la card */
 }
